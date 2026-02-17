@@ -132,7 +132,7 @@ Cybersecurity Analyst with experience in **SIEM monitoring**, **endpoint telemet
 
 ## Contact
 
-- **Location:** Matthews, NC
+- **Location:** Washington, DC
 - **Email:** [sadvandniknaz0@gmail.com](mailto:sadvandniknaz0@gmail.com)
 - **GitHub:** [https://github.com/Nikki-65](https://github.com/Nikki-65)
 
