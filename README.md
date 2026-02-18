@@ -1,47 +1,96 @@
 ![Banner](assets/site-banner.png)
 
-# Nikki Sadvand | Cybersecurity Analyst | SIEM & SOC Portfolio
+**Nikki Sadvand | SOC Analyst | SIEM & Incident Response Portfolio**
 
-Cybersecurity portfolio focused on SIEM monitoring, endpoint and network telemetry, DFIR and SOC-style investigations.
+Cybersecurity portfolio focused on **SIEM monitoring, alert triage, endpoint and network telemetry analysis, and structured incident investigations.**
 
-**Live site:** https://Nikki-65.github.io  
+**Live Site:** https://Nikki-65.github.io
 **Resume (PDF):** Nikki_Sadvand_Cybersecurity_Analyst_Resume.pdf
 
 ---
 
-## Summary
+**Professional Summary**
 
-Cybersecurity Analyst with experience in **SIEM monitoring**, **endpoint telemetry**, **log analysis**, and **SOC investigations**. Founder of **NS Cybersecurity**, delivering **Elastic SIEM ingestion pipelines**, **Sysmon and Zeek telemetry**, and **Windows security assessments** aligned with **MITRE ATT&CK**.
+SOC Analyst with hands-on experience in **Elastic SIEM monitoring, Windows authentication anomaly investigations, network telemetry validation, and structured incident response aligned with NIST 800-61 and MITRE ATT&CK.**
 
-**M.S. in Cybersecurity Technology (UMGC, GPA 4.0, President’s List)**.
+Experience handling **15–25 security alerts per week**, analyzing Event ID 4625 authentication failures, validating telemetry with KQL, and documenting findings through full investigation workflows.
 
----
-
-## Core Capabilities
-
-- **SIEM & SOC Monitoring:** Elastic SIEM, Splunk, alert triage, KQL, dashboards  
-- **Endpoint Telemetry:** Sysmon, Windows Event Logs, authentication, process, and network events  
-- **Network Telemetry:** Zeek, Filebeat, Kibana Discover validation, Wireshark analysis  
-- **DFIR & Investigation:** Autopsy, FTK Imager, Autoruns, artifact review, IOC extraction  
-- **Framework Alignment:** MITRE ATT&CK, NIST, SOX ITGC  
-- **Automation & Scripting:** Python, PowerShell, Bash  
+M.S. Cybersecurity Technology (UMGC, GPA 4.0, President’s List).
 
 ---
 
-## Highlighted Experience (Portfolio-Relevant)
+**Core Competencies**
 
-### NS Cybersecurity | Remote | Dec 2024 – Present  
-**Founder & Cybersecurity Consultant**
+**SIEM & Monitoring**
 
-- Engineered a **Fleet-managed Elastic SIEM endpoint pipeline** using **Sysmon v15+**; ingested process creation, network connections, and PowerShell events; validated visibility using **KQL**.
-- Deployed **Zeek** on **Ubuntu 24.04**; ingested **1,500+ structured network events** into Elastic SIEM via **Filebeat**; validated real-time telemetry in **Kibana Discover**.
-- Conducted **Windows endpoint security audits** covering authentication failures, firewall rules, and active connections; validated outbound traffic and delivered hardening recommendations.
+Elastic SIEM, Splunk
 
-### Sunset Auto Sales | Mar 2019 – Present  
-**Cybersecurity & IT Support Technician**
+Alert triage and escalation
 
-- Supported and secured Windows endpoints; performed malware investigations, MFA enforcement, endpoint troubleshooting, and system imaging.
-- Maintained security documentation and resolved high-volume support tickets across operational systems.
+KQL log validation
+
+Kibana Discover analysis
+
+**Endpoint Telemetry**
+
+Sysmon v15+
+
+Windows Event Logs
+
+Authentication & process analysis
+
+PowerShell monitoring
+
+**Network Telemetry**
+
+Zeek deployment (Ubuntu 24.04)
+
+DNS & connection log analysis
+
+Filebeat ingestion
+
+Wireshark review
+
+**Incident Response**
+
+NIST 800-61 lifecycle
+
+IOC validation
+
+Case-style documentation
+
+MITRE ATT&CK behavioral mapping
+
+**DFIR & Analysis**
+
+Autopsy
+
+FTK Imager
+
+Autoruns
+
+Log artifact review
+
+---
+
+**Highlighted Experience**
+**NS Cybersecurity | Security Operations Analyst**
+
+Triaged and investigated 20–40 Windows authentication anomalies (Event ID 4625), executing investigations aligned with NIST 800-61 lifecycle.
+
+Handled 15–25 Elastic SIEM alerts per week, performing tiered triage, investigation validation, escalation, and structured documentation.
+
+Deployed Zeek network monitoring and validated real-time DNS and connection telemetry in Elastic SIEM.
+
+Engineered and validated a Fleet-managed Elastic endpoint ingestion pipeline (Sysmon v15+) to support endpoint investigations.
+
+**Sunset Auto Sales | Cybersecurity & IT Support Technician**
+
+Supported and secured 60+ Windows endpoints in an Active Directory-based environment.
+
+Reduced recurring malware incidents by approximately 50% through MFA enforcement and endpoint hardening.
+
+Maintained incident documentation across high-volume support operations.
 
 ---
 
