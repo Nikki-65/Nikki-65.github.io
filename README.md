@@ -6,7 +6,7 @@
 Cybersecurity Analyst with hands-on experience in SIEM operations, alert triage, endpoint and network telemetry validation, and structured incident investigations aligned with MITRE ATT&CK and NIST 800-61.
 
 🔗 **Live Site:** https://nscybersecurity.com/  
-📄 **Resume:** Nikki_Sadvand_Cybersecurity_Analyst_Resume.pdf  
+📄 **Resume:** Niknaz_Sadehvandi_SOC_Resume.pdf 
 
 ---
 
@@ -161,7 +161,7 @@ Tooling: GitHub, SEO meta tags
 ## Contact
 
 Location: Matthews, NC  
-Email: [sadvandniknaz0@gmail.com](mailto:sadvandniknaz0@gmail.com)  
+Email: [	nikkisadvand@gmail.com](mailto:nikkisadvand@gmail.com)  
 GitHub: [github.com/Nikki-65](https://github.com/Nikki-65)  
 Portfolio: [nscybersecurity.com](https://nscybersecurity.com/)
 
