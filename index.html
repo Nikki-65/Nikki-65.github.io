@@ -1,261 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nikki Sadvand | Cybersecurity Portfolio</title>
-<meta name="description" content="Nikki Sadvand: Junior SOC Analyst focused on SIEM monitoring, endpoint & network telemetry analysis, and incident response.">
-<style>
-:root {
-  --navy: #0a1f44;
-  --navy2: #13294b;
-  --bg: #f7f9fc;
-  --card: #ffffff;
-  --muted: #5b6876;
-  --accent: #0d6efd;
-  --radius: 12px;
-  --shadow: 0 10px 20px rgba(0,0,0,0.08);
-  --border: rgba(10,31,68,0.12);
-  --focus: 0 0 0 3px rgba(13,110,253,0.25);
-}
-* { box-sizing: border-box; }
-body {
-  margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background: var(--bg); color: #222;
-}
-a { color: var(--navy2); text-decoration: none; }
-a:hover { text-decoration: underline; }
-a:focus { outline: none; box-shadow: var(--focus); border-radius: 6px; }
-header { background: var(--navy); color: #fff; }
-.nav {
-  max-width: 1100px; margin: 0 auto; display: flex; align-items: center;
-  justify-content: space-between; padding: 16px 20px;
-}
-.brand { display: flex; align-items: center; gap: 8px; font-weight: 700; }
-.brand .lock {
-  width: 26px; height: 26px; border: 2px solid #fff; border-radius: 6px; position: relative;
-}
-.brand .lock:before {
-  content: ""; position: absolute; top: -12px; left: 6px; right: 6px;
-  height: 12px; border: 2px solid #fff; border-bottom: none; border-radius: 10px 10px 0 0;
-}
-nav ul { list-style: none; display: flex; gap: 22px; margin: 0; padding: 0; }
-nav a { color: #e8eef8; font-weight: 600; }
-nav a.active { color: #fff; border-bottom: 2px solid #fff; padding-bottom: 2px; }
-.hero {
-  max-width: 1100px; margin: 30px auto; display: grid;
-  grid-template-columns: 180px 1fr; gap: 28px; align-items: center; padding: 0 20px;
-}
-@media (max-width: 720px) {
-  .hero { grid-template-columns: 1fr; }
-  .headshot { width: 140px; height: 140px; }
-}
-.headshot {
-  width: 180px; height: 180px; border-radius: 20px; object-fit: cover;
-  box-shadow: var(--shadow); border: 4px solid #fff; background: #fff;
-}
-.hero h1 { margin: 0 0 8px; font-size: 30px; color: var(--navy2); }
-.tagline { margin: 0 0 10px; color: #30415d; font-weight: 600; }
-.meta { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 16px; padding: 0; list-style: none; color: #6b7787; }
-.meta li { background: #fff; border: 1px solid var(--border); border-radius: 999px; padding: 6px 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.04); }
-.summary { margin: 10px 0; color: var(--muted); line-height: 1.5; max-width: 78ch; }
-.cta { margin-top: 20px; }
-.cta-main, .cta-social { display: flex; flex-wrap: wrap; gap: 12px; margin: 8px 0; }
-.btn {
-  display: inline-flex; align-items: center; gap: 6px;
-  background: var(--navy2); color: #fff; padding: 10px 16px;
-  border-radius: 8px; border: 1px solid transparent; font-weight: 600; text-decoration: none;
-  transition: transform .1s, filter .1s;
-}
-.btn:hover { transform: translateY(-1px); filter: brightness(1.05); }
-.btn:focus { outline: none; box-shadow: var(--focus), var(--shadow); }
-.btn.outline { background: #fff; color: var(--navy2); border-color: var(--navy2); }
-.btn.pdf { background: var(--accent); }
-.btn.linkedin { background: #0077b5; }
-.btn.linkedin:hover { background: #005f87; }
-.btn.github { background: #111827; }
-.btn.github:hover { background: #0b1220; }
-.projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 18px; }
-.project { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); padding: 16px; border: 1px solid var(--border); display: flex; flex-direction: column; }
-.kicker { font-size: 12px; color: #6b7787; text-transform: uppercase; letter-spacing: .4px; margin-bottom: 6px; }
-.section { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
-.card { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); padding: 20px; border: 1px solid var(--border); }
-.badges { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: 10px; }
-.badges img { height: 24px; }
-.btnrow { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 12px; }
-.footer { margin-top: 40px; background: var(--navy); color: #cfd9ea; }
-.foot { max-width: 1100px; margin: 0 auto; padding: 16px 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
-.footer a { color: #e8eef8; }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nikki Sadvand | Cybersecurity Analyst</title>
+  <!-- Primary SEO -->
+  <meta name="description" content="Junior SOC Analyst with hands-on experience in SIEM monitoring, endpoint and network telemetry analysis, and SOC investigations. NS Cybersecurity founder delivering Elastic SIEM pipelines, Sysmon and Zeek telemetry, and Windows security assessments aligned with MITRE ATT&CK, NIST, and SOX ITGC." />
+  <meta name="robots" content="index,follow" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nikki Sadvand | Cybersecurity Portfolio" />
+  <meta property="og:description" content="Elastic SIEM • Sysmon • Zeek • SOC Investigations • Windows Security Audits • MITRE ATT&CK • NIST • SOX ITGC" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nscybersecurity.com/" />
+  <meta property="og:image" content="https://nscybersecurity.com/assets/profile.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Nikki Sadvand | Cybersecurity Portfolio" />
+  <meta name="twitter:description" content="Elastic SIEM • Sysmon • Zeek • SOC Investigations • Windows Security Audits • MITRE ATT&CK • NIST • SOX ITGC" />
+  <meta name="twitter:image" content="https://nscybersecurity.com/assets/profile.jpg" />
+  <link rel="canonical" href="https://nscybersecurity.com/" />
+  <link rel="icon" href="assets/favicon.png" />
+  <!-- Preconnect for badges and icons -->
+  <link rel="preconnect" href="https://img.shields.io" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <!-- CSS (assumes existing style from template is included) -->
+  <style>
+    :root {
+      --navy: #0a1f44;
+      --navy-2: #13294b;
+      --bg: #f7f9fc;
+      --card: #ffffff;
+      --muted: #5b6876;
+      --accent: #d93025;
+      --radius: 16px;
+      --shadow: 0 10px 30px rgba(0,0,0,.08);
+      --border: rgba(10,31,68,.12);
+      --focus: 0 0 0 3px rgba(13,110,253,.25);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: #111827;
+      font-size: 16px;
+      line-height: 1.15;
+    }
+    a { color: var(--navy-2); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header { background: var(--navy); color: #fff; }
+    .nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      flex-wrap: wrap;
+    }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; letter-spacing: .2px; }
+    .brand .lock {
+      width: 26px; height: 26px;
+      border: 2px solid #fff; border-radius: 6px;
+      position: relative;
+    }
+    .brand .lock:before {
+      content:"";
+      position:absolute;
+      top:-12px; left:6px; right:6px;
+      height: 12px;
+      border: 2px solid #fff;
+      border-bottom: none;
+      border-radius: 10px 10px 0 0;
+    }
+    nav ul { list-style: none; display: flex; gap: 22px; margin: 0; padding: 0; flex-wrap: wrap; }
+    nav a { color: #e8eef8; font-weight: 600; }
+    nav a.active { color: #fff; border-bottom: 2px solid #fff; padding-bottom: 2px; }
+    /* Hero */
+    .hero {
+      max-width: 1100px;
+      margin: 30px auto;
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 28px;
+      align-items: center;
+      padding: 0 20px;
+    }
+    @media (max-width: 720px){
+      .hero { grid-template-columns: 1fr; }
+      .headshot { width: 140px; height: 140px; }
+    }
+    .headshot {
+      width: 180px; height: 180px;
+      border-radius: 20px;
+      object-fit: cover;
+      box-shadow: var(--shadow);
+      border: 4px solid #fff;
+      background: #fff;
+    }
+    .hero h1 { margin: 0 0 8px; font-size: 34px; color: var(--navy-2); }
+    .tagline { margin: 0 0 10px; color: #30415d; font-weight: 600; }
+    .summary { color: var(--muted); margin: 0 0 14px; max-width: 78ch; }
+    .meta { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 16px; padding: 0; list-style: none; color: #6b7787; }
+    .meta li {
+      background: #fff; border: 1px solid var(--border);
+      border-radius: 999px; padding: 6px 10px;
+      box-shadow: 0 6px 18px rgba(0,0,0,.04);
+      font-size: 14px;
+    }
+    .cta {
+      display: flex; flex-direction: column; gap: 12px;
+    }
+    .cta-main, .cta-social { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--navy-2); color: #fff;
+      padding: 12px 16px; border-radius: 12px;
+      border: 1px solid transparent; box-shadow: var(--shadow);
+      font-weight: 600; transition: transform .12s ease, filter .12s ease, background .12s ease;
+      text-decoration: none;
+    }
+    .btn:hover { transform: translateY(-2px); filter: brightness(1.05); }
+    .btn:focus { outline: none; box-shadow: var(--shadow), var(--focus); }
+    .btn.outline {
+      background: #fff; color: var(--navy-2); border-color: var(--border);
+    }
+    .btn.pdf { background: var(--accent); }
+    .btn.linkedin { background-color: #0077b5; }
+    .btn.linkedin:hover { background-color: #005f87; }
+    .btn.github { background: #111827; }
+    .btn.github:hover { background: #0b1220; }
+    .btn .icon {
+      width: 18px; height: 18px; vertical-align: middle;
+      filter: invert(1);
+    }
+    /* Sections / Cards */
+    .section { max-width: 1100px; margin: 26px auto; padding: 0 20px; }
+    .section h2 { margin-top: 0; color: var(--navy-2); }
+    .badges { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+    .badges img { height: 24px; }
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 18px; }
+    .project {
+      background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow);
+      padding: 16px; border: 1px solid var(--border);
+      display: flex; flex-direction: column; gap: 8px;
+    }
+    .project h3 { margin: 0; color: var(--navy-2); font-size: 18px; }
+    .project p { margin: 0; color: var(--muted); font-size: 15px; }
+    .kicker {
+      font-size: 12px; color: #6b7787; text-transform: uppercase;
+      letter-spacing: .4px; margin-bottom: 6px;
+    }
+    .actions { display: flex; gap: 10px; flex-wrap: wrap; }
+    .btn.alt {
+      display: inline-flex; background: #fff; color: var(--navy-2);
+      padding: 10px 14px; border: 1px solid var(--navy-2);
+      border-radius: 10px; font-weight: 600; white-space: nowrap;
+      text-decoration: none;
+    }
+    .btn.alt:hover { text-decoration: none; filter: brightness(1.05); }
+    /* Contact Form (not fully shown here) */
+    /* Footer */
+    footer { margin-top: 36px; background: var(--navy); color: #cfd9ea; }
+    .foot {
+      max-width: 1100px; margin: 0 auto; padding: 16px 20px;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 12px;
+    }
+    footer a { color: #e8eef8; }
+  </style>
 </head>
 <body>
-<header>
-  <div class="nav">
-    <div class="brand">
-      <div class="lock" aria-hidden="true"></div>
-      <div>Nikki Sadvand</div>
+  <header>
+    <div class="nav">
+      <div class="brand">
+        <div class="lock" aria-hidden="true"></div>
+        <div>Nikki Sadvand</div>
+      </div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="certifications.html">Certifications</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav aria-label="Main">
-      <ul>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="certifications.html">Certifications</a></li>
-        <li><a href="contact.html">Contact</a></li>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img class="headshot" src="assets/profile.jpg" alt="Nikki Sadvand, Cybersecurity Analyst">
+    <div>
+      <h1>Junior SOC Analyst (SIEM & Telemetry)</h1>
+      <p class="tagline">Elastic SIEM • Splunk • Sysmon • Zeek • Windows Event Logs • Incident Response</p>
+      <ul class="meta" aria-label="Highlights">
+        <li>Elastic SIEM pipelines with Sysmon v15+</li>
+        <li>Zeek network monitoring on Ubuntu 24.04</li>
+        <li>UMGC M.S. Cybersecurity (GPA 4.0)</li>
       </ul>
-    </nav>
-  </div>
-</header>
-
-<section class="hero">
-  <img class="headshot" src="assets/profile.jpg" alt="Nikki Sadvand, Cybersecurity Analyst">
-  <div>
-    <h1>Junior SOC Analyst & SIEM Engineer</h1>
-    <p class="tagline">Elastic SIEM • Splunk • Sysmon • Zeek • Windows Security • Threat Hunting</p>
-    <ul class="meta" aria-label="Highlights">
-      <li>Elastic SIEM pipeline (Sysmon v15+)</li>
-      <li>Zeek DNS/HTTP on Ubuntu</li>
-      <li>UMGC M.S. Cybersecurity (4.0 GPA)</li>
-    </ul>
-    <p class="summary">Cybersecurity Analyst with hands-on experience in SIEM monitoring, alert triage, and endpoint/network telemetry analysis. Skilled in Elastic SIEM, Splunk, and logging (Sysmon, Zeek, Windows Event Logs). Committed to strengthening security posture through MFA enforcement, malware remediation, and investigative reporting.</p>
-    <p class="summary">Security Operations Analyst — NS Cybersecurity (Independent Lab) | Dec 2024–Present</p>
-    <p class="summary">Cybersecurity & IT Support Technician — Sunset Auto Sales | Mar 2019–Present</p>
-    <div class="cta">
-      <div class="cta-main">
-        <a class="btn pdf" href="Niknaz_Sadehvandi_SOC_Resume.pdf" target="_blank">Download Resume</a>
-        <a class="btn outline" href="projects.html">Projects</a>
-        <a class="btn outline" href="contact.html">Contact</a>
-      </div>
-      <div class="cta-social">
-        <a class="btn linkedin" href="https://linkedin.com/in/nikki-sadvand-a34179325" target="_blank">LinkedIn</a>
-        <a class="btn github" href="https://github.com/Nikki-65" target="_blank">GitHub</a>
+      <p class="summary">Proactive Junior Cybersecurity Analyst with hands-on experience in SIEM monitoring, endpoint telemetry, and network log analysis. Built and tested detection workflows in Elastic SIEM and Splunk, analyzing Windows Event IDs and network data to catch anomalies. Skilled in incident triage, documentation, and security hardening aligned with MITRE ATT&CK and NIST frameworks.</p>
+      <p class="summary">Founder &amp; Consultant, NS Cybersecurity (Dec 2024–Present)</p>
+      <p class="summary">Cybersecurity &amp; IT Support Technician, Sunset Auto Sales (Mar 2019–Present)</p>
+      <div class="cta">
+        <div class="cta-main">
+          <a class="btn pdf" href="Niknaz_Sadehvandi_SOC_Resume.pdf" target="_blank" rel="noopener">
+            &#128467; Resume (PDF)
+          </a>
+          <a class="btn outline" href="projects.html">View Projects</a>
+          <a class="btn outline" href="contact.html">Contact</a>
+        </div>
+        <div class="cta-social">
+          <a class="btn linkedin" href="https://www.linkedin.com/in/nikki-sadvand-a34179325/" target="_blank" rel="noopener">
+            <img class="icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="" aria-hidden="true">
+            LinkedIn
+          </a>
+          <a class="btn github" href="https://github.com/Nikki-65" target="_blank" rel="noopener">
+            <img class="icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="" aria-hidden="true">
+            GitHub
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section">
-  <div class="card">
-    <h2>Skills &amp; Tools</h2>
-    <div class="badges">
-      <img alt="Elastic SIEM" src="https://img.shields.io/badge/SIEM-Elastic-blue" />
-      <img alt="Splunk SIEM" src="https://img.shields.io/badge/SIEM-Splunk-orange" />
-      <img alt="Sysmon" src="https://img.shields.io/badge/Telemetry-Sysmon-blue" />
-      <img alt="Zeek" src="https://img.shields.io/badge/Telemetry-Zeek-blue" />
-      <img alt="Windows Event Logs" src="https://img.shields.io/badge/Log%20Analysis-Windows%20Event%20Logs-yellow" />
-      <img alt="KQL" src="https://img.shields.io/badge/Query-KQL-9cf" />
-      <img alt="MITRE ATT&CK" src="https://img.shields.io/badge/MITRE-ATT%26CK-red" />
-      <img alt="NIST" src="https://img.shields.io/badge/Framework-NIST-lightgrey" />
-      <img alt="Nmap" src="https://img.shields.io/badge/Recon-Nmap-success" />
-      <img alt="Wireshark" src="https://img.shields.io/badge/Network-Wireshark-lightgrey" />
-      <img alt="Autopsy" src="https://img.shields.io/badge/Forensics-Autopsy-purple" />
-      <img alt="FTK Imager" src="https://img.shields.io/badge/Forensics-FTK%20Imager-lightgrey" />
-      <img alt="Python" src="https://img.shields.io/badge/Python-Automation%20%7C%20Scripting-blue" />
-      <img alt="PowerShell" src="https://img.shields.io/badge/PowerShell-IR%20%7C%20Admin-lightblue" />
-      <img alt="Windows OS" src="https://img.shields.io/badge/OS-Windows-blueviolet" />
-      <img alt="Linux OS" src="https://img.shields.io/badge/OS-Linux-orange" />
-      <img alt="Active Directory" src="https://img.shields.io/badge/Directory-Active%20Directory-green" />
+  <!-- Skills & Tools -->
+  <section class="section">
+    <div class="card">
+      <h2>Skills &amp; Tools</h2>
+      <div class="badges">
+        <img alt="Elastic SIEM" src="https://img.shields.io/badge/SIEM-Elastic-informational" />
+        <img alt="Splunk" src="https://img.shields.io/badge/SIEM-Splunk-informational" />
+        <img alt="Sysmon" src="https://img.shields.io/badge/Telemetry-Sysmon-blue" />
+        <img alt="Zeek" src="https://img.shields.io/badge/Telemetry-Zeek-blue" />
+        <img alt="Windows Event Logs" src="https://img.shields.io/badge/Log%20Analysis-Windows%20Event%20Logs-yellow" />
+        <img alt="KQL" src="https://img.shields.io/badge/Query-KQL-9cf" />
+        <img alt="MITRE ATT&CK" src="https://img.shields.io/badge/MITRE-ATT%26CK-red" />
+        <img alt="NIST" src="https://img.shields.io/badge/Framework-NIST-lightgrey" />
+        <img alt="SOX ITGC" src="https://img.shields.io/badge/Compliance-SOX%20ITGC-lightgrey" />
+        <img alt="Nessus" src="https://img.shields.io/badge/Vuln%20Scanning-Nessus-orange" />
+        <img alt="Nmap" src="https://img.shields.io/badge/Recon-Nmap-success" />
+        <img alt="Wireshark" src="https://img.shields.io/badge/Network-Wireshark-9cf" />
+        <img alt="Autopsy" src="https://img.shields.io/badge/Forensics-Autopsy-purple" />
+        <img alt="FTK Imager" src="https://img.shields.io/badge/Forensics-FTK%20Imager-lightgrey" />
+        <img alt="Sysinternals" src="https://img.shields.io/badge/Sysinternals-Autoruns%20%7C%20ProcMon-critical" />
+        <img alt="Python" src="https://img.shields.io/badge/Python-Automation%20%7C%20Scripting-blue" />
+        <img alt="PowerShell" src="https://img.shields.io/badge/PowerShell-IR%20%7C%20Admin-lightblue" />
+        <img alt="Bash" src="https://img.shields.io/badge/Bash-Linux%20Automation-green" />
+        <img alt="Windows" src="https://img.shields.io/badge/Platform-Windows-blueviolet" />
+        <img alt="Linux" src="https://img.shields.io/badge/Platform-Linux-orange" />
+        <img alt="Active Directory" src="https://img.shields.io/badge/Active%20Directory-Group%20Policy-important" />
+        <img alt="Git" src="https://img.shields.io/badge/SCM-Git-blue" />
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="featured-work" class="section">
-  <h2>Featured Projects</h2>
-  <div class="projects">
-    <article class="project">
-      <span class="kicker">Elastic SIEM / Telemetry</span>
-      <h3>Endpoint Detection Pipeline</h3>
-      <p>Built an Elastic SIEM pipeline with Fleet and Sysmon (v15+) on Windows to ingest and analyze process, network, and PowerShell events. Validated visibility and detection rules in Kibana with targeted KQL queries.</p>
-      <p><a href="artifacts/Endpoint_Detection_Elastic_Sysmon.pdf" target="_blank">View report &rarr;</a></p>
-    </article>
-    <article class="project">
-      <span class="kicker">Network Telemetry</span>
-      <h3>Zeek + Filebeat &rarr; Elastic</h3>
-      <p>Deployed a Zeek network sensor on Ubuntu for DNS and HTTP logs, ingesting data via Filebeat into Elastic SIEM. Ensured structured telemetry ingestion and cross-source correlation of network events for threat detection.</p>
-      <p><a href="artifacts/Elastic_SIEM_Zeek_Log_Ingestion_and_Validation.pdf" target="_blank">View report &rarr;</a></p>
-    </article>
-    <article class="project">
-      <span class="kicker">Splunk SIEM</span>
-      <h3>Detections &amp; Dashboards</h3>
-      <p>Developed Splunk dashboards and searches for authentication anomalies (Windows Event IDs 4624/4625) and suspicious process activities. Enabled rapid host/user pivoting and efficient alert triage workflows.</p>
-      <p><a href="https://github.com/Nikki-65/splunk-detections-dashboards" target="_blank">View on GitHub &rarr;</a></p>
-    </article>
-    <article class="project">
-      <span class="kicker">Forensics / DFIR</span>
-      <h3>Windows Intrusion Analysis</h3>
-      <p>Conducted forensic analysis of a simulated intrusion: reviewed IIS logs and Base64 payloads, identified SSH-based exfiltration, and examined persistence with Autoruns and FTK Imager. Documented findings with NIST-aligned remediation steps.</p>
-      <p><a href="artifacts/DFIR_Incident_Investigation_Forensic_Analysis.pdf" target="_blank">View report &rarr;</a></p>
-    </article>
-    <article class="project">
-      <span class="kicker">Network Reconnaissance</span>
-      <h3>Python Nmap Toolkit</h3>
-      <p>Created a Python wrapper for Nmap to automate vulnerability scans and asset discovery. Generated structured HTML reports by parsing XML output, streamlining the network reconnaissance process for security assessments.</p>
-      <p><a href="https://github.com/Nikki-65/network-recon-toolkit" target="_blank">View on GitHub &rarr;</a></p>
-    </article>
-  </div>
-</section>
-
-<section class="section">
-  <h2>Experience</h2>
-  <div class="card">
-    <h3>NS Cybersecurity (Independent Lab)</h3>
-    <p class="meta">Security Operations Analyst | Dec 2024 – Present</p>
-    <ul>
-      <li>Built and managed an Elastic SIEM lab (Sysmon, Filebeat, Kibana) to monitor Windows endpoint telemetry.</li>
-      <li>Developed detection rules and triaged alerts in Elastic Security using KQL and Zeek network logs.</li>
-      <li>Conducted threat hunting and basic incident investigations with Windows Event Logs and Sysmon, documenting findings per NIST guidelines.</li>
-    </ul>
-    <h3>Sunset Auto Sales (Matthews, NC)</h3>
-    <p class="meta">Cybersecurity & IT Support Technician | Mar 2019 – Present</p>
-    <ul>
-      <li>Supported Windows endpoints in a small-business environment, handling malware remediation, MFA enforcement, and endpoint troubleshooting.</li>
-      <li>Helped reduce recurring malware incidents by tightening security settings, enforcing MFA, and standardizing basic hygiene practices.</li>
-      <li>Maintained structured documentation of issues and changes, aiding repeatable support workflows and clearer incident follow-up.</li>
-    </ul>
-  </div>
-</section>
-
-<section class="section" id="education">
-  <div class="card">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>M.S., Cybersecurity Technology</strong>, University of Maryland Global Campus (GPA: 4.0, President’s List)</li>
-      <li><strong>B.S., Information Technology</strong>, University of Phoenix (Magna Cum Laude)</li>
-      <li><strong>A.A., Information Technology</strong>, Central Piedmont Community College</li>
-    </ul>
-  </div>
-</section>
-
-<section class="section" id="certifications">
-  <div class="card">
-    <h2>Certifications</h2>
-    <ul>
-      <li>CompTIA Security+ (in progress)</li>
-      <li>IBM: Python Basics for Data Science (2024)</li>
-      <li>Stanford Online: R Programming Fundamentals (2024)</li>
-    </ul>
-  </div>
-</section>
-
-<section class="section">
-  <div class="card">
-    <h2>Contact</h2>
-    <p>I am available for Junior SOC Analyst, security monitoring, and IT support roles. Feel free to reach out for opportunities or collaborations.</p>
-    <div class="btnrow">
-      <a class="btn" href="mailto:nikkisadvand@gmail.com">Email</a>
-      <a class="btn linkedin" href="https://linkedin.com/in/nikki-sadvand-a34179325" target="_blank">LinkedIn</a>
-      <a class="btn github" href="https://github.com/Nikki-65" target="_blank">GitHub</a>
-      <a class="btn pdf" href="Niknaz_Sadehvandi_SOC_Resume.pdf" target="_blank">Resume (PDF)</a>
+  <!-- Featured Work / Projects -->
+  <section id="featured-work" class="section">
+    <h2>Featured Work</h2>
+    <div class="projects">
+      <!-- Elastic SIEM Project -->
+      <article class="project">
+        <span class="kicker">Elastic SIEM / SIEM Engineering</span>
+        <h3>Elastic SIEM + Fleet + Sysmon</h3>
+        <p>Built an Elastic SIEM pipeline with Fleet and Sysmon v15+. Ingested and analyzed process, network, and PowerShell events in Kibana Discover. Tested detection rules and validated alerts for suspicious activity.</p>
+        <p>Artifacts: 
+          <a href="artifacts/Endpoint_Detection_Elastic_Sysmon.pdf" target="_blank" rel="noopener">Endpoint Detection (PDF)</a> · 
+          <a href="artifacts/kibana_sysmon_process_events.png" target="_blank" rel="noopener">Kibana Process Events (PNG)</a>
+        </p>
+      </article>
+      <!-- DFIR Project -->
+      <article class="project">
+        <span class="kicker">Forensics / DFIR</span>
+        <h3>DFIR Incident Investigation</h3>
+        <p>Simulated web server breach analysis: decoded a Base64 payload, analyzed IIS and firewall logs, and tracked SSH data exfiltration. Used FTK Imager, Autopsy, and Autoruns to reconstruct malicious persistence and steps.</p>
+        <p>
+          <a href="artifacts/DFIR_Incident_Investigation_Forensic_Analysis.pdf" target="_blank" rel="noopener">View Project (PDF) &rarr;</a>
+        </p>
+      </article>
+      <!-- Splunk Project -->
+      <article class="project">
+        <span class="kicker">SOC / Splunk SIEM</span>
+        <h3>Splunk Detection & Dashboards</h3>
+        <p>Developed SPL queries for failed logins (Event ID 4625) and high-privilege logins (4672). Created dashboards to triage alerts by host and user, streamlining threat investigation and escalation workflows.</p>
+        <p>
+          <a href="https://github.com/Nikki-65/splunk-detections-dashboards" target="_blank" rel="noopener">View project &rarr;</a>
+        </p>
+      </article>
+      <!-- Recon Project -->
+      <article class="project">
+        <span class="kicker">Recon / Automation</span>
+        <h3>Network Recon Toolkit (Python)</h3>
+        <p>Built a Python wrapper for Nmap to automate network scanning. It runs enumeration profiles, parses XML output, and generates HTML reports for security analysts. Makes asset discovery and reporting more efficient.</p>
+        <p>
+          <a href="https://github.com/Nikki-65/network-recon-toolkit" target="_blank" rel="noopener">View project &rarr;</a>
+        </p>
+      </article>
+      <!-- ALU Project -->
+      <article class="project">
+        <span class="kicker">Computer Architecture</span>
+        <h3>8-bit ALU & Simple CPU</h3>
+        <p>Designed an 8-bit ALU and a simple CPU using Logisim-evolution. Implemented multiple operations with registers and flags. Developed a control unit and designed instruction flow to support basic programs.</p>
+        <p>
+          <a href="https://github.com/Nikki-65/alu-cpu-logisim/blob/main/CPU_Project.pdf" target="_blank" rel="noopener">Project report (PDF) &rarr;</a>
+        </p>
+      </article>
     </div>
-  </div>
-</section>
+  </section>
 
-<footer class="footer">
-  <div class="foot">
-    <small>© <span id="year"></span> Nikki Sadvand • Cybersecurity Portfolio</small>
-    <a href="Niknaz_Sadehvandi_SOC_Resume.pdf" target="_blank">Download Resume (PDF)</a>
-  </div>
-</footer>
+  <!-- Certifications -->
+  <section class="section" id="certifications">
+    <div class="card">
+      <h2>Certifications</h2>
+      <p style="color: var(--muted); margin: 0;">
+        IBM: Python Basics for Data Science (2024)
+      </p>
+      <p style="margin: 10px 0 0;">
+        <a href="certifications.html">See all certifications &rarr;</a>
+      </p>
+    </div>
+  </section>
 
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <!-- Detailed Skills -->
+  <section class="section" id="skills-detailed">
+    <div class="card" style="display: grid; gap: 16px;">
+      <h2>Skills</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px;">
+        <div class="card" style="padding: 16px;">
+          <h3 style="margin-top: 0;">Security & Compliance</h3>
+          <ul style="margin: 0; padding-left: 18px; color: var(--muted); line-height: 1.6;">
+            <li>SOX ITGC and audit-ready documentation</li>
+            <li>Incident investigation and DFIR fundamentals</li>
+            <li>Risk-based recommendations and remediation planning</li>
+          </ul>
+        </div>
+        <div class="card" style="padding: 16px;">
+          <h3 style="margin-top: 0;">SIEM & Telemetry</h3>
+          <ul style="margin: 0; padding-left: 18px; color: var(--muted); line-height: 1.6;">
+            <li>Elastic SIEM, Filebeat, Kibana, KQL</li>
+            <li>Splunk (SPL queries, dashboards, triage)</li>
+            <li>Sysmon, Windows Event Logs, Zeek</li>
+          </ul>
+        </div>
+        <div class="card" style="padding: 16px;">
+          <h3 style="margin-top: 0;">Tools</h3>
+          <ul style="margin: 0; padding-left: 18px; color: var(--muted); line-height: 1.6;">
+            <li>Wireshark, Nmap, Nessus/Tenable</li>
+            <li>Autopsy, FTK Imager, Autoruns</li>
+            <li>VirusTotal, Event Viewer, auditpol</li>
+          </ul>
+        </div>
+        <div class="card" style="padding: 16px;">
+          <h3 style="margin-top: 0;">Programming</h3>
+          <ul style="margin: 0; padding-left: 18px; color: var(--muted); line-height: 1.6;">
+            <li>Python, PowerShell, Bash</li>
+            <li>Familiarity with Java and R</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section" id="education">
+    <div class="card">
+      <h2>Education</h2>
+      <ul style="margin: 0; padding-left: 18px; color: var(--muted); line-height: 1.6;">
+        <li><strong>M.S. Cybersecurity Technology</strong>, University of Maryland Global Campus (GPA 4.0; President’s List)</li>
+        <li><strong>B.S. Information Technology</strong>, University of Phoenix (Magna Cum Laude)</li>
+        <li><strong>A.A. Information Technology</strong>, Central Piedmont CC</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="foot">
+      <small>© <span id="y"></span> Nikki Sadvand • Cybersecurity Portfolio</small>
+      <a href="Niknaz_Sadehvandi_SOC_Resume.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
